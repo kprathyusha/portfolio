@@ -65,4 +65,7 @@ p {
 text-align: center;
 
 }
+.project-description h2{
+    font-size: 35px;
+}
 }
