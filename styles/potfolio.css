@@ -34,7 +34,12 @@ p {
     margin: 0;
     font-weight: bold;
 }
-
+.projects-heading{
+    font-size: 22px;
+    font-family: var(--default-font-family);
+    opacity:0.6;
+    padding: 18px;
+}
 .btn-branding {
     background: #6c63ff;
     border-radius: 4px;
