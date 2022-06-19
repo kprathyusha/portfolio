@@ -15,7 +15,7 @@ p {
     font-family: var(--default-font-family);
 }
 nav{
-    background-color: rgba(187, 167, 252, 0.186);
+    background-color: rgba(201, 150, 246, 0.186);
     
 }
 nav ul{
@@ -37,10 +37,40 @@ nav a{
 nav a:hover, nav li.active a {
     color:#6c63ff;
 }
+footer img{
+    width: 42px;
+  padding: 10px 8px;
+  margin: 4px 0;
+     
 
+}
+footer i{
+ font-size: 20px;
+ color:#6c63ff;
+ padding: 12px;
+    
+
+}
+footer a{
+    margin:0 18px;
+     
+     border-radius: 50px;
+    }   
+footer i:hover{
+    color:#fff;
+    background-color:rgba(170, 94, 245, 0.5) ;
+     border-radius: 50%;
+      }
+      footer  img:hover{
+    background-color:rgba(170, 94, 245, 0.5) ;
+
+     border-radius: 50%;
+
+      }
+   
 .hero {
     text-align: center;
-    padding: 210px 30px;
+    padding: 220px 30px 125px;
 }
 .hero h1 {
     font-size: 86px;
@@ -83,6 +113,20 @@ nav a:hover, nav li.active a {
     color: rgb(44, 43, 43);
     font-size: 18px;
 }
+.about-heading h1 {
+    text-align: center;
+    padding: 60px;
+    font-size: 55px;
+}
+.about-name {
+    font-family: var(--default-font-family);
+    padding-top: 20px;
+}
+.about-description {
+    text-align: center;
+    padding-top: 30px;
+}
+
 @media (max-width: 578px) {
     .hero h1 {
         font-size: 65px;
@@ -101,17 +145,4 @@ nav a:hover, nav li.active a {
         padding: 5px;
         line-height: 5;
     }
-}
-.about-heading h1 {
-    text-align: center;
-    padding: 60px;
-    font-size: 55px;
-}
-.about-name {
-    font-family: var(--default-font-family);
-    padding-top: 20px;
-}
-.about-description {
-    text-align: center;
-    padding-top: 30px;
 }
