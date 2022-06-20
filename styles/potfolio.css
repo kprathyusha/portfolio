@@ -15,7 +15,7 @@ p {
     font-family: var(--default-font-family);
 }
 nav {
-    background-color: rgba(201, 150, 246, 0.186);
+    background-color: rgb(201, 150, 246);
 }
 nav ul {
     padding: 0;
@@ -26,7 +26,7 @@ nav li {
     padding: 18px;
     font-family: var(--default-font-family);
     font-size: 18px;
-    line-height: 8;
+    line-height: 6;
 }
 nav a {
     text-decoration: none;
@@ -80,8 +80,24 @@ footer img:hover {
     margin: 0;
     font-weight: bold;
 }
+
+.btn-branding {
+    background: #6c63ff;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 28px;
+    font-size: 18px;
+    
+
+}
+.btn:hover {
+    background: #6c63ff;
+    color: black;
+    border: 1px solid #6c63ff;
+}
 .projects-heading{
     margin-top: 175px;
+   
 }
 .projects-heading p {
     
@@ -90,24 +106,15 @@ footer img:hover {
     padding: 9px;
     margin: 15px;
 }
-.btn-branding {
-    background: #6c63ff;
-    border-radius: 4px;
-    color: white;
-    padding: 15px 28px;
-    font-size: 18px;
-}
-.btn:hover {
-    background: #6c63ff;
-    color: black;
-    border: 1px solid #6c63ff;
-}
 .project-description {
-    padding: 50px;
+    padding: 35px;
+     text-align: center;
 }
+
+
 .project-description p {
     color: rgb(44, 43, 43);
-    font-size: 18px;
+    font-size: 15px;
 }
 .about-heading h1 {
     text-align: center;
