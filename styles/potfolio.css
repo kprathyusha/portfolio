@@ -2,6 +2,14 @@
     --heading-font-family: "Playfair Display", serif;
     --default-font-family: "Poppins", sans-serif;
 }
+body {
+    --bg-dark-color: #322f3d;
+    --primary-color: #22577e;
+    --secondary-color: #ef9f9f;
+    --bg-light-color: #efeeee;
+    background-color: var(--bg-light-color);
+    color: var(--primary-color);
+}
 h1,
 h2,
 h3,
@@ -15,7 +23,8 @@ p {
     font-family: var(--default-font-family);
 }
 nav {
-    background-color: rgb(201, 150, 246);
+    border-bottom: 1px solid var(--primary-color);
+    background-color: var(--bg-light-color);
 }
 nav ul {
     padding: 0;
@@ -30,113 +39,122 @@ nav li {
 }
 nav a {
     text-decoration: none;
-    color: #000;
+    color: var(--primary-color);
 }
-nav a:hover,
+nav a:hover {
+    color: var(--secondary-color);
+    opacity: 0.6;
+}
 nav li.active a {
-    color: #6c63ff;
+    color: var(--secondary-color);
+    font-weight: bold;
 }
+
 footer img {
     width: 42px;
     padding: 10px 8px;
-    margin-bottom: 6px ;
+    margin-bottom: 6px;
 }
 footer i {
     font-size: 20px;
-    color: #6c63ff;
+    color: var(--secondary-color);
     padding: 12px;
 }
 footer a {
     margin: 0 18px;
-    
 }
 footer i:hover {
-    color: #fff;
-    background-color: rgba(170, 94, 245, 0.5);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
     border-radius: 50%;
 }
 footer img:hover {
-    background-color: rgba(170, 94, 245, 0.5);
+    background-color: var(--primary-color);
     border-radius: 50%;
 }
 
 .hero {
     text-align: center;
-    padding: 220px 30px 125px;
+    padding: 205px 30px 125px;
 }
 .hero h1 {
     font-size: 86px;
+    color: var(--primary-color);
 }
 .hero h2 {
     font-family: var(--default-font-family);
-    color: rgb(92, 89, 89);
+    color: var(--primary-color);
+    opacity: 0.8;
     font-size: 20px;
     line-height: 2;
     font-weight: normal;
 }
 .hero p {
     font-size: 30px;
-    color: #272142;
+    color: var(--primary-color);
+    opacity: 0.8;
     margin: 0;
     font-weight: bold;
 }
 
 .btn-branding {
-    background: #6c63ff;
+    background: var(--secondary-color);
     border-radius: 4px;
-    color: white;
+    color: var(--primary-color);
     padding: 15px 28px;
     font-size: 18px;
-    
-
 }
 .btn:hover {
-    background: #6c63ff;
-    color: black;
-    border: 1px solid #6c63ff;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
 }
-.projects-heading{
+.projects-heading {
+    color: var(--primary-color);
     margin-top: 175px;
-   
 }
 .projects-heading p {
-    
-    
-    opacity: 0.65;
+    opacity: 0.75;
     padding: 9px;
     margin: 15px;
 }
 .project-description {
+    color: var(--primary-color);
     padding: 35px;
-     text-align: center;
+    text-align: center;
+    margin-top: 45px;
 }
 
-
 .project-description p {
-    color: rgb(44, 43, 43);
+    color: var(--primary-color);
     font-size: 15px;
 }
 .about-heading h1 {
+    color: var(--primary-color);
     text-align: center;
-    margin-top: 150px;
-    padding: 45px;
+    margin-top: 125px;
+    padding: 25px;
     font-size: 55px;
 }
 .about-name {
+    color: var(--primary-color);
+    opacity: 0.8;
     font-family: var(--default-font-family);
-    padding-top: 20px;
+    margin-top: 35px;
 }
 .about-description {
+    color: var(--primary-color);
+
     text-align: center;
     padding-top: 30px;
 }
-.contact-container h1{
+.contact-container h1 {
     font-size: 55px;
 }
-.contact-container a{
+.contact-container a {
     font-size: 20px;
     text-decoration: none;
-    color: #6c63ff;
+    color: var(--secondary-color);
 }
 
 @media (max-width: 578px) {
@@ -144,7 +162,7 @@ footer img:hover {
         font-size: 65px;
     }
     .hero {
-        padding: 220px 10px;
+        padding: 200px 10px;
     }
     .project-description {
         text-align: center;
@@ -157,4 +175,25 @@ footer img:hover {
         margin: 2px;
         line-height: 5;
     }
+}
+.darkToggle {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid #555;
+}
+
+.darkToggle:checked {
+    background: #000;
+}
+
+.dark {
+    --bg-dark-color: #efeeee;
+    --primary-color: #ef9f9f;
+    --secondary-color: #22577e;
+    --bg-light-color: #322f3d;
+    background-color: var(--bg-light-color);
+    color: var(--bg-dark-color);
 }
