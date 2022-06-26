@@ -24,7 +24,7 @@ p {
 }
 nav {
     border-bottom: 1px solid var(--primary-color);
-    /* background-color: var(--bg-light-color); */
+    background-color: var(--bg-light-color);
 }
 nav ul {
     padding: 0;
@@ -179,43 +179,11 @@ footer img:hover {
 }
 .darkToggle {
     opacity: 0;
-    /* outline: none; */
-    /* display: flex; */
+  
     position: absolute;
 
-    /* appearance: none; */
-    /* width: 30px; */
-    /* height: 30px; */
-    /* background: white; */
-    /* border-radius: 5px; */
-    /* border: 2px solid #555; */
-}
-/* .fa-sun{
-    position:relative;
-    font-size: 30px;
-     opacity:0;
-}
-.fa-moon{
-    position:relative;
-    top:0;
-    left:-35px;
-    font-size: 30px;
-    z-index:-1;
-   
-    display: flex;
-    
-}
-  .fa-moon.dark{
-    display:none;
-} 
-.fa-sun.dark{
-    display: inline-block;
 }
 
-.darkToggle:checked .fa-moon{ 
-    background:white;
-opacity:0;
-}  */
 .label {
   width: 48px;
   height: 24px;
@@ -229,7 +197,7 @@ opacity:0;
   top:115px;
   right:3px;
   
-  /* transform: scale(1.5); */
+ 
 }
 
 .ball {
@@ -243,7 +211,7 @@ opacity:0;
   transition: transform 0.2s;
 }
 
-/*  target the elemenent after the label*/
+
 .darkToggle:checked + .label .ball{
   transform: translate(100%);
 }
