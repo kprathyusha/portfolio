@@ -124,6 +124,10 @@ footer img:hover {
     text-align: center;
     margin-top: 45px;
 }
+.project-description h3{
+    color:var(--secondary-color);
+    font-weight: bolder;
+}
 
 .project-description p {
     color: var(--primary-color);
@@ -151,10 +155,13 @@ footer img:hover {
 .contact-container h1 {
     font-size: 55px;
 }
+.contact-container h3{
+    color:var(--secondary-color);
+}
 .contact-container a {
     font-size: 20px;
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 @media (max-width: 578px) {
@@ -200,6 +207,9 @@ footer img:hover {
  
 }
 .fa-sun{
+    color: var(--primary-color);
+}
+.fa-moon{
     color: var(--primary-color);
 }
 
